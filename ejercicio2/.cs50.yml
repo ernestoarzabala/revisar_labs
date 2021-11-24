@@ -1,5 +1,11 @@
 lab50:
   files:
     - !exclude "*"
-    - !include ejercicio2.c
+    - !include ev_UII_02_a.c
+    - !include ev_UII_02_b.c
+    - !include ev_UII_02_c.c
+    - !include ev_UII_02_d.c
+    - !include ev_UII_02_e.c
+    - !include ev_UII_02_f.c
+
     
