@@ -6,31 +6,31 @@ Comprender el procedimiento para abrir, guardar y crear un código ejecutable.
 
 ## Instrucciones
 
-1. Al iniciar su ambiente (CS50 Labs/ Sandbox) aparece sin un archivo en el editor de texto y sin ningún archivo en la carpeta, tal como se muestra en la siguiente imagen:
+Al iniciar su ambiente (CS50 Labs/ Sandbox) aparece sin un archivo en el editor de texto y sin ningún archivo en la carpeta, tal como se muestra en la siguiente imagen:
 
 ![captura de pantalla de CS50 Labs / CS50 Sanbox](EVII_img1.png)
 
-2. Hay que crear un nuevo archivo de texto que contendrá el código fuente del primer ejercicio. Para crear un nuevo archivo hay que presionar el símbolo + tal como se muestra en la siguiente imagen:
+Hay que crear un nuevo archivo de texto que contendrá el código fuente del primer ejercicio. Para crear un nuevo archivo hay que presionar el símbolo + tal como se muestra en la siguiente imagen:
 
 ![captura de pantalla de CS50 Labs / CS50 Sanbox](EVII_img2.png)
 
-3.  Nos pedirá asignarle un nombre y una extensión. Recuerde que los archivos de texto que contienen el código fuente de los programas desarrollados en lenguaje C tienen la extensión .c .
+Nos pedirá asignarle un nombre y una extensión. Recuerde que los archivos de texto que contienen el código fuente de los programas desarrollados en lenguaje C tienen la extensión .c .
 
 ![captura de pantalla de CS50 Labs / CS50 Sanbox](EVII_img3.png)
 
-4. Asignele el nombre ejercicioA y la extensión .c tal como se muestra en la siguiente imagen:
+Asignele el nombre ejercicioA y la extensión .c tal como se muestra en la siguiente imagen:
 
 ![captura de pantalla de CS50 Labs / CS50 Sanbox](EVII_img4.png)
 
-5. Presione el botón de "Create File" para crear su archivo de texto que contendrá el código fuente del programa.
+Presione el botón de "Create File" para crear su archivo de texto que contendrá el código fuente del programa.
 
 ![captura de pantalla de CS50 Labs / CS50 Sanbox](EVII_img5.png)
 
-6. Una vez que ha creado el archivo el ambiente (CS50 Labs / CS50 Sanbox) se mostrará de la siguiente manera:
+Una vez que ha creado el archivo el ambiente (CS50 Labs / CS50 Sanbox) se mostrará de la siguiente manera:
 
 ![captura de pantalla de CS50 Labs / CS50 Sanbox](EVII_img6.png)
 
-7. En el editor de texto copie el siguiente texto de código fuente:
+En el editor de texto copie el siguiente texto de código fuente:
 
 ```c
 #include <cs50.h>
@@ -53,26 +53,61 @@ Debe de quedar de la siguiente manera:
 
 ![captura de pantalla de CS50 Labs / CS50 Sanbox](EVII_img7.png)
 
-8.
+Puede reacomodar el ambiente de la siguiente manera:
 
 ![captura de pantalla de CS50 Labs / CS50 Sanbox](EVII_img8.png)
 
-9.
-
 ![captura de pantalla de CS50 Labs / CS50 Sanbox](EVII_img9.png)
-
-10.
 
 ![captura de pantalla de CS50 Labs / CS50 Sanbox](EVII_img10.png)
 
-
-11. Para compilar el archivo de código fuente necesita escribir el siguiente comando en la ventana de "Terminal"
+Para compilar el archivo de código fuente necesita escribir el siguiente comando en la ventana de "Terminal"
 
 ```
 clang -Wall ejercicioA.c -o ex1
 ```
-[captura de pantalla de CS50 Labs / CS50 Sanbox](EVII_img11.png)
+![captura de pantalla de CS50 Labs / CS50 Sanbox](EVII_img11.png)
 
+Recuerde que el proceso de compilación lo que hace es crear un archivo ejecutable a partir del archivo de texto que contiene el código fuente.
+Al terminar el proceso de compilación , debido a que no sucedio ningún error, la ventana de la "Terminal" se mostrará de la siguiente manera:
+
+![captura de pantalla de CS50 Labs / CS50 Sanbox](EVII_img12.png)
+
+![captura de pantalla de CS50 Labs / CS50 Sanbox](EVII_img13.png)
+
+Para verificar que ahora tenemos dos archivos : el de texto del código fuente (ejercicioA.c) y el nuevo archivo ejecutable (ex1) se puede utilizar el comando:
+
+```
+ls
+```
+ 
+"ls" puede entenderlo como si significara "lista todos los archivos de esta carpeta".
+
+![captura de pantalla de CS50 Labs / CS50 Sanbox](EVII_img14.png)
+
+Tambíen podemos revisar que existen estos archivos en el "FileTree" (directorio de la carpeta)
+
+![captura de pantalla de CS50 Labs / CS50 Sanbox](EVII_img15.png)
+
+para ejecutar el archivo ex1 que es un archivo ejecutable lo hacemos de la siguiente manera:
+
+```
+./ex1
+```
+
+![captura de pantalla de CS50 Labs / CS50 Sanbox](EVII_img16.png)
+
+![captura de pantalla de CS50 Labs / CS50 Sanbox](EVII_img17.png)
+
+El resultado de la ejecución será el siguiente:
+
+![captura de pantalla de CS50 Labs / CS50 Sanbox](EVII_img18.png)
+
+![captura de pantalla de CS50 Labs / CS50 Sanbox](EVII_img19.png)
+
+```c
+
+```
 
 ## Enviar evidencia para entrega
 
