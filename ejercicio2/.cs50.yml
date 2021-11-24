@@ -1,5 +1,16 @@
 lab50:
-  file:
+  files:
     - !exclude "*"
+    - !include ejercicio1.c
     - !include ejercicio2.c
+    - !include ejercicio3.c
+    - !include ejercicio4.c
+    - !include ejercicio5.c
+    - !include ejercicio6.c
+    - !include ejercicio7.c
     
+
+
+   
+    
+
