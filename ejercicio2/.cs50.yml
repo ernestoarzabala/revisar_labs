@@ -1,6 +1,6 @@
 lab50:
   files:
     - !exclude "*"
-    - !include codigoa.c
+    - !include ejercicio1.c
    
     
