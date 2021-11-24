@@ -1,4 +1,5 @@
 lab50:
-    - !exclude "*"
-    - !include ejercicio3.c
+  files:
+   - !exclude "*"
+   - !include ejercicio1.c
     
