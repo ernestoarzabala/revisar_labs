@@ -2,10 +2,5 @@ lab50:
   files:
     - !exclude "*"
     - !include codigoa.c
-    - !include codigob.c
-    - !include codigoc.c
-    - !include codigod.c
-    - !include codigoe.c
-    - !include codigof.c
-
+   
     
