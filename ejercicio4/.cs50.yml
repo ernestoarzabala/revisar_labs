@@ -1,0 +1,12 @@
+lab50:
+  files:
+   - !exclude "*"
+   - !include ejercicio1.c
+   - !include caso_01.txt
+   - !include caso_01.txt
+   - !include caso_02.txt
+   - !include caso_03.txt
+   - !include caso_04.txt
+   - !include caso_05.txt
+   - !include caso_06.txt
+    

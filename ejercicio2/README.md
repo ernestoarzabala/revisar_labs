@@ -2,7 +2,7 @@
 
 ## Objetivo: 
 
-Comprender el procedimiento para abrir, guardar y crear un código ejecutable.
+    Comprender el procedimiento para abrir, guardar y crear un código ejecutable.
 
 ## Instrucciones
 
