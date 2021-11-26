@@ -1,7 +1,6 @@
 lab50:
   files:
    - !exclude "*"
-   - !include ejercicio1.c
    - !include caso_01.txt
    - !include caso_01.txt
    - !include caso_02.txt
