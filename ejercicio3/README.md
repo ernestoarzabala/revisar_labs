@@ -494,6 +494,205 @@ int main(void)
 
 ### Ejercicio 6 Estructura de control de selección, proposición SWITCH
 
+La proposición SWITCH es útil para decidir en la siguientes situaciones:
+
+A) Para seleccionar de varios fragmentos de código cual es único el que debe de ejecutarse.
+B) Para seleccionar de varios fragmentos de códigos algunos que deben de ejecutarse.
+
+
+Para lograr lo anterior la proposición SWITCH hace uso de cuatro palabras reservadas :
+
+    * switch
+    * case
+    * default
+    * break
+
+
+A) Para seleccionar de varios fragmentos de código cual es único el que debe de ejecutarse.
+
+Cree un archivo de texto con el siguiente código , compile dicho archivo de texto de código fuente y posteriormente ejecute el archivo ejecutable resultante del proceso de compilación.
+
+```c
+#include <cs50.h>
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void)
+{
+    int numero;
+    
+    printf("\n\n");
+    
+    numero = get_int("Ingresa un numero entero  en el rango [-5,5] por favor:");
+
+    switch(numero)
+    {
+        case -5:
+                printf("Ingresaste el numero -5\n");
+                break;
+        case -4:
+                printf("Ingresaste el numero -4\n");
+                break;
+        case -3:
+                printf("Ingresaste el numero -3\n");
+                break;
+        case -2:
+                 printf("Ingresaste el numero -2\n");
+                break;
+        case -1:
+                printf("Ingresaste el numero -1\n");
+                break;
+        case 5:
+                printf("Ingresaste el numero 5\n");
+                break;
+        case 4:
+                printf("Ingresaste el numero 4\n");
+                break;
+        case 3:
+                printf("Ingresaste el numero 3\n");
+                break;
+        case 2:
+                printf("Ingresaste el numero 2\n");
+                break;
+        case 1:
+                printf("Ingresaste el numero 1\n");
+                break;
+        case 0:
+                printf("Ingresaste el numero 0\n");
+                break;
+        default:
+                 printf("Ingresaste un numero fuera del rango!\n");
+
+    }
+    return EXIT_SUCCESS;
+}
+
+
+```
+
+B) Para seleccionar de varios fragmentos de códigos algunos que deben de ejecutarse.
+
+Cree un archivo de texto con el siguiente código , compile dicho archivo de texto de código fuente y posteriormente ejecute el archivo ejecutable resultante del proceso de compilación.
+
+```c
+#include <cs50.h>
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void)
+{
+    int numero;
+    
+    printf("\n\n");
+    
+    numero = get_int("Ingresa un numero entero  en el rango [-5,5] por favor:");
+
+    switch(numero)
+    {
+        case -5:
+        case -4:
+        case -3:
+        case -2:
+        case -1:
+                printf("Ingresaste un numero negativo\n");
+                break;
+        case 5:
+        case 4:
+        case 3:
+        case 2:
+        case 1:
+                printf("Ingresaste un numero positivo\n");
+                break;
+        case 0:
+                printf("Ingresaste el numero 0\n");
+                break;
+        default:
+                 printf("Ingresaste un numero fuera del rango!\n");
+
+    }
+    return EXIT_SUCCESS;
+}
+```
+
+Cree un archivo de texto con el siguiente código , compile dicho archivo de texto de código fuente y posteriormente ejecute el archivo ejecutable resultante del proceso de compilación.
+
+```c
+#include <cs50.h>
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void)
+{
+    int letra;
+    
+    printf("\n\n");
+    
+    letra = get_char("Ingresa una letra, por favor:");
+
+    switch(letra)
+    {
+        case 'a' :
+        case 0x41:        
+        case 'e':
+        case 'E':
+        case 105:
+        case 'I':
+        case 'o':
+        case 0x4F:
+        case 117:
+        case 'U':
+                printf("La letra es una vocal\n");
+                break;
+        
+        case 0x39:
+        case 0x38:
+        case 0x37:
+        case '0':
+        case '1':
+        case '2':
+        case '3':
+        case 54:
+        case 53:
+        case 52:
+                printf("La letra es un digito cuyo valor numerico es:\%d \n",letra - '0');
+                break;
+        case '!':
+        case '"':
+        case '#':
+        case 0x24:
+        case 0x25:
+        case 0x26:
+        case 0x27:
+        case 0x28:
+        case 0x29:
+        case 0x2A:
+        case 0x2B:
+        case 0x2C:
+        case 0x2D:
+        case 0x2E:
+        case 0x2F:
+        case 64:
+        case 63:
+        case 62:
+        case 61:
+        case 60:
+        case 59:
+        case 58:
+        case '[':
+        case ']':
+        case '}':
+        case '{':
+                printf("Ingresaste un símbolo\n");
+                break;
+        default:
+                 printf("Ingresaste alguna otra letra del alfabeto!\n");
+
+    }
+
+    return EXIT_SUCCESS;
+}
+```
+
 ## Enviar evidencia para entrega
 
 Las instrucciones y espacio para la entrega de esta evidencia las puedes encontrar en el curso de la [plataforma Moodle de la universidad] (http://mecatronica.utch.edu.mx)
